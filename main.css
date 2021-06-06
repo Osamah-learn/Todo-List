@@ -1,54 +1,91 @@
-*{
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    background-image: linear-gradient(120deg,#ffafbd,#ffc3a0);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+body {
+  background-image: linear-gradient(120deg, #ffafbd, #ffc3a0);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 
-header{
-    font-size: 1.5rem;
+header {
+  font-size: 1.5rem;
 }
 
-header,form{
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-form input, form button{
-    padding: 0.5rem 2rem;
-    font-size: 2rem;
-    border: none;
-    outline: none;
-    background-color: white;
-    
+form input,
+form button {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: white;
 }
 
-form button{
-    color: tomato;
-    background-color: rgb(245, 233, 233);
+form button {
+  color: tomato;
+  background-color: rgb(245, 233, 233);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: black;
+}
+
+#icon {
+  color: tomato;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 20%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.4rem;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.todo-item {
+  flex: 1;
+  padding: 0rem 1rem;
+}
+
+.trash-btn, .complete-btn{
+    background-color: tomato;
     cursor: pointer;
-    transition: all 0.3s ease ;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
 }
-
-form button:hover{
-    background-color: black;
+.complete-btn{
+    background-color: greenyellow;
     
 }
 
-#icon{
-    color: tomato;
+.fa-trash,
+.fa-check-circle {
+    pointer-events: none;
 }
-
-
