@@ -5,11 +5,13 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, #ffafbd, #ffc3a0);
+  background: #f39c12;
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  
 }
+
 
 header {
   font-size: 1.5rem;
@@ -46,7 +48,7 @@ form button:hover {
 #icon {
   color: tomato;
 }
-
+/* Todo Style */
 .todo-container {
   display: flex;
   justify-content: center;
@@ -66,6 +68,7 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  transition: 1s all 0.3s ease;
 }
 .todo-item {
   flex: 1;
@@ -88,4 +91,64 @@ form button:hover {
 .fa-trash,
 .fa-check-circle {
     pointer-events: none;
+}
+
+
+.completed{
+  text-decoration: line-through;
+  opacity:0.2;
+}
+
+.fall{
+  transform: translate(120px, 50%);
+  opacity: 0.1;
+}
+/* Option Style */
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  color: tomato;
+  width:10rem;
+  cursor: pointer;
+  padding:1.1rem;
+  font-family: Arial;
+  font-weight: bold;
+  width: 11rem;
+}
+  
+
+
+.select{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+.select::after{
+  content: ' \25BC';
+  position:absolute;
+  top: 0%;
+  right: 0%;
+  background-color:tomato;
+  pointer-events: none;
+  padding: 1rem;
+  text-align: center;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+  
+  
+}
+
+.select:hover::after {
+  color: black;
 }

@@ -25,11 +25,18 @@
         <button class="todo-button" type="submit">
             <i id="icon" class="fas fa-plus-circle"></i>
         </button>
+        <div class="select">
+            <select name="slct" id="filterTodo">
+              <option selected disabled>Choose</option>
+              <option value="all" class="all">All</option>
+              <option value="completed" class="completed">Completed</option>
+              <option value="uncompleted" class="uncompleted">UNcompleted</option>
+            </select>
+          </div>
+        </div>
     </form>
     <div class="todo-container">
-        <ul class="todo-list">
-
-        </ul>
+        <ul class="todo-list"></ul>
     </div>
 
 
